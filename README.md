@@ -3,3 +3,6 @@
 ## Introduction
 
 ## 1. Setting Up
+
+## 2. Initial Server Build
+
