@@ -3,27 +3,27 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 export const ContactSchema = new Schema({
-    firstName; {
+    firstName: {
       type: String,
       required: 'Enter a first name'
     },
-    lastName; {
+    lastName: {
       type: String,
       required: 'Enter a last name'
     },
-    email; {
+    email: {
       type: String
     },
-    company; {
+    company: {
       type: String
     },
-    company; {
+    company: {
       type: String
     },
-    phone; {
+    phone: {
       type: Number
-    }
-    created_date; {
+    },
+    created_date: {
       type: Number,
       default: Date.now
     }
