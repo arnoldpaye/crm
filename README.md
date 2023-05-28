@@ -9,3 +9,5 @@
 ## 3. Database Setup
 
 ## 4. CRUD Operations
+
+## 5. Other API Options
