@@ -6,3 +6,6 @@
 
 ## 2. Initial Server Build
 
+## 3. Database Setup
+
+## 4. CRUD Operations
