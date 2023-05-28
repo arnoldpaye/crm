@@ -12,3 +12,11 @@ export const addNewContact = (req, res) => {
     res.send(err);
   });
 };
+
+export const getContacts = (req, res) => {
+  Contact.find({}).then((contact) => {
+    res.json(contact);
+  }).catch((err) => {
+    res.send(err);
+  });
+}
