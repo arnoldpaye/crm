@@ -27,4 +27,12 @@ export const getContactWithID = (req, res) => {
   }).catch((err) => {
     res.send(err);
   });
-}
+};
+
+export const updateContact = (req, res) => {
+  Contact.findOneAndUpdate({ _id: req.params.contactId }, req.body, { new: true }).then((contact) => {
+    res.json(contact);
+  }).catch((err) => {
+    res.send(err);
+  });
+};
