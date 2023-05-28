@@ -19,4 +19,12 @@ export const getContacts = (req, res) => {
   }).catch((err) => {
     res.send(err);
   });
+};
+
+export const getContactWithID = (req, res) => {
+  Contact.findById(req.params.contactId).then((contact) => {
+    res.json(contact);
+  }).catch((err) => {
+    res.send(err);
+  });
 }
